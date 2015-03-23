@@ -1,0 +1,43 @@
+﻿<#@ template debug="true" hostSpecific="true" language="C#" #>
+<#@ output extension=".cs" #>
+<#@ Assembly Name="System.Core" #>
+<#@ import namespace="System.Linq" #>
+<#@ import namespace="System.Collections" #>
+<#@ import namespace="System.Collections.Generic" #> 
+<#@ import namespace="System.Reflection" #> 
+<#@ assembly name="$(SolutionDir)\Populator\bin\Debug\Populator.dll" #>
+<#@ import namespace="Populator" #> 
+
+<#
+   // insert your template code here the tempalte code will be syntaxhighlighted 
+   // and you will have intellisense for all namespaces in the full edition
+
+   string Greeting = "Hello";
+	var types = GetTypesWith<DtoSpawn>(true);
+#>
+// This is the output code from your template
+// you only get syntax-highlighting here - not intellisense
+namespace DTOs{
+
+ <#foreach(var type in types){#>
+		<#= ((DtoSpawn)(Attribute.GetCustomAttribute(type, typeof(DtoSpawn)))) #>
+	<#}#>
+	
+  public class MyGeneratedClass{
+ 
+     static void main (string[] args){
+       System.Console.WriteLine("<#= Greeting #>, the time is now: <#= System.DateTime.Now.ToString() #>");
+     }
+  }
+}
+ 
+<#+
+  // Insert any template procedures here
+IEnumerable<Type> GetTypesWith<TAttribute>(bool inherit) 
+                              where TAttribute: System.Attribute
+ { return from a in AppDomain.CurrentDomain.GetAssemblies()
+          from t in a.GetTypes()
+          where t.IsDefined(typeof(TAttribute),inherit)
+          select t;
+ }
+#>

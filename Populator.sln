@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Populator", "Populator\Populator.csproj", "{F3A1199B-E380-416C-8FDE-40F951E39EA4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PopulatorTests", "PopulatorTests\PopulatorTests.csproj", "{60E2CA51-1536-490A-A3A7-648AE0C2662B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataProject", "DataProject\DataProject.csproj", "{8D89EF2F-B42D-4532-9D87-036762331D9C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F3A1199B-E380-416C-8FDE-40F951E39EA4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F3A1199B-E380-416C-8FDE-40F951E39EA4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F3A1199B-E380-416C-8FDE-40F951E39EA4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F3A1199B-E380-416C-8FDE-40F951E39EA4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{60E2CA51-1536-490A-A3A7-648AE0C2662B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{60E2CA51-1536-490A-A3A7-648AE0C2662B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{60E2CA51-1536-490A-A3A7-648AE0C2662B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{60E2CA51-1536-490A-A3A7-648AE0C2662B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8D89EF2F-B42D-4532-9D87-036762331D9C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8D89EF2F-B42D-4532-9D87-036762331D9C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8D89EF2F-B42D-4532-9D87-036762331D9C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8D89EF2F-B42D-4532-9D87-036762331D9C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
